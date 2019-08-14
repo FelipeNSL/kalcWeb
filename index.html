@@ -17,28 +17,28 @@
 <body>
 
     <div class="calculator">
-        <div class="screen"></div>
+        <div class="screen">0</div>
         <div class="buttons">
             <div class="numbers">
-                <button data-val="9" onclick="PegarValor(innerText);">9</button>
-                <button data-val="8" onclick="PegarValor(innerText);">8</button>
-                <button data-val="7" onclick="PegarValor(innerText);">7</button>
-                <button data-val="6" onclick="PegarValor(innerText);">6</button>
-                <button data-val="5" onclick="PegarValor(innerText);">5</button>
-                <button data-val="4" onclick="PegarValor(innerText);">4</button>
-                <button data-val="3" onclick="PegarValor(innerText);">3</button>
-                <button data-val="2" onclick="PegarValor(innerText);">2</button>
-                <button data-val="1" onclick="PegarValor(innerText)">1</button>
-                <button data-val="clear" onclick="zerar(innerText);">C</button>
-                <button data-val=".">.</button>
-                <button data-val="0" onclick="PegarValor(innerText);">0</button>
+                <button data-val="9" onclick="PegarValor(this.innerText);">9</button>
+                <button data-val="8" onclick="PegarValor(this.innerText);">8</button>
+                <button data-val="7" onclick="PegarValor(this.innerText);">7</button>
+                <button data-val="6" onclick="PegarValor(this.innerText);">6</button>
+                <button data-val="5" onclick="PegarValor(this.innerText);">5</button>
+                <button data-val="4" onclick="PegarValor(this.innerText);">4</button>
+                <button data-val="3" onclick="PegarValor(this.innerText);">3</button>
+                <button data-val="2" onclick="PegarValor(this.innerText);">2</button>
+                <button data-val="1" onclick="PegarValor(this.innerText)">1</button>
+                <button data-val="clear" onclick="limpar(this.innerText);">C</button>
+                <button data-val="." onclick="PegarValor(this.innerText)">.</button>
+                <button data-val="0" onclick="PegarValor(this.innerText);">0</button>
             </div>
             <div class="operators">
-                <button data-val="÷" onclick="PegarOperador(innerText);">÷</button>
-                <button data-val="x" onclick="PegarOperador(innerText);">x</button>
-                <button data-val="-" onclick="PegarOperador(innerText);">-</button>
-                <button data-val="+" onclick="PegarOperador(innerText);">+</button>
-                <button data-val="=" onclick="PegarOperador(innerText)">=</button>
+                <button data-val="÷" onclick="PegarOperador(this.innerText);">÷</button>
+                <button data-val="x" onclick="PegarOperador(this.innerText);">x</button>
+                <button data-val="-" onclick="PegarOperador(this.innerText);">-</button>
+                <button data-val="+" onclick="PegarOperador(this.innerText);">+</button>
+                <button data-val="=" class="igual" onclick="igual();">=</button>
             </div>
         </div>
     </div>
